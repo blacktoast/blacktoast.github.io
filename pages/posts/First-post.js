@@ -1,9 +1,9 @@
 import React from "react";
 
-function Firstpost(props) {
+function Firstpost({ test }) {
   return (
     <div>
-      <h1>test Fist post</h1>
+      <h1>test Fist post ${test}</h1>
     </div>
   );
 }
