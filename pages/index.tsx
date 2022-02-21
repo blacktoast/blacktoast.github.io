@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hi my tests blog</h1>
+      <h1 className="text-3xl font-bold underline">Hi my tests blog</h1>
       <h2>hello</h2>
       <Link href="/test">test</Link>
       <br />
