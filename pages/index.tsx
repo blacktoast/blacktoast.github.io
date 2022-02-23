@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
-// import { allPosts } from "../.contentlayer/generated";
+import { allPosts } from "../.contentlayer/generated";
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = allPosts;
+  return { props: { posts } };
+}
+
+export default function Home({ posts }: any) {
+  console.log(posts);
   return (
     <>
       <div className="container">
@@ -12,7 +18,6 @@ export default function Home() {
         </Head>
         <h1 className="text-3xl font-bold underline">Hi my tests blog</h1>
         <h2>hello</h2>
-        <Link href="/posts/First-post">first-post</Link>
         <br />
         <Link href="/autors/me">Me!!</Link>
       </div>
