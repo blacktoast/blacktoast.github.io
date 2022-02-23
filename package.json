@@ -1,6 +1,5 @@
 {
   "private": true,
-  "type": "module",
   "homepage": "https://blacktoast.github.io/",
   "scripts": {
     "dev": "next dev",
