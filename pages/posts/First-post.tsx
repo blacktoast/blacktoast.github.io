@@ -7,7 +7,6 @@ import Layout from "../../components/Layout";
 type firstPostProps = {
   test: string;
 };
-
 function Firstpost({ test }: firstPostProps) {
   return (
     <Layout>
