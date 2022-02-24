@@ -7,8 +7,12 @@ export async function getStaticProps() {
   return { props: { posts } };
 }
 
+function TestCom({ post }: any) {
+  return <div dangerouslySetInnerHTML={{ __html: post }}>{post.title}</div>;
+}
+
 export default function Home({ posts }: any) {
-  console.log(posts);
+  console.log(posts[0].body.html);
   return (
     <>
       <div className="container">
@@ -18,6 +22,7 @@ export default function Home({ posts }: any) {
         </Head>
         <h1 className="text-3xl font-bold underline">Hi my tests blog</h1>
         <h2>hello</h2>
+        <TestCom post={posts[0].body.html}></TestCom>
         <br />
         <Link href="/autors/me">Me!!</Link>
       </div>
