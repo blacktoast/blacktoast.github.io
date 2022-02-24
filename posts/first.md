@@ -10,6 +10,8 @@ test
 ```
 
 [[README]]
+
+
 test
 
 - **Static Generddatdddion** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.

@@ -8,7 +8,24 @@ export async function getStaticProps() {
 }
 
 function TestCom({ post }: any) {
-  return <div dangerouslySetInnerHTML={{ __html: post }}>{post.title}</div>;
+  return (
+    <>
+      <div dangerouslySetInnerHTML={{ __html: post }}>{post.title}</div>
+      <style jsx>
+        {`
+          code {
+            background-color: red;
+          }
+          p {
+            background-color: red;
+          }
+          .test {
+            background-color: red;
+          }
+        `}
+      </style>
+    </>
+  );
 }
 
 export default function Home({ posts }: any) {
@@ -20,7 +37,7 @@ export default function Home({ posts }: any) {
           <title>my First blog</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1 className="text-3xl font-bold underline">Hi my tests blog</h1>
+        <h1 className="text-xl font-bold underline">Hi my tests blog</h1>
         <h2>hello</h2>
         <TestCom post={posts[0].body.html}></TestCom>
         <br />
