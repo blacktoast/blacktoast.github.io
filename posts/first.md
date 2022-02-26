@@ -11,6 +11,7 @@ test
 
 [[README]]
 
+![alt](/public/vercel.svg)
 
 test
 
