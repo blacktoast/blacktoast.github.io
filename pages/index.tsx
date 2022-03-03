@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import { allPosts } from "../.contentlayer/generated";
+import { allBlogs } from "../.contentlayer/generated";
 
 export async function getStaticProps() {
-  const posts = allPosts;
+  const posts = allBlogs;
   return { props: { posts } };
 }
 

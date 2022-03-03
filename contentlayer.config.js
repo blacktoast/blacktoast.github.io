@@ -1,8 +1,8 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
-export const Post = defineDocumentType(() => ({
-  name: "Post",
-  filePathPattern: `**/*.md`,
+export const Blog = defineDocumentType(() => ({
+  name: "Blog",
+  filePathPattern: `blog/**/*.md`,
   fields: {
     title: {
       type: "string",
@@ -11,6 +11,11 @@ export const Post = defineDocumentType(() => ({
     },
     date: {
       type: "date",
+      description: "The date of the post",
+      required: true,
+    },
+    tag: {
+      type: "string",
       description: "The date of the post",
       required: true,
     },
@@ -25,5 +30,5 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "posts",
-  documentTypes: [Post],
+  documentTypes: [Blog],
 });
