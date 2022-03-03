@@ -12,7 +12,7 @@ test
 
 [[README]]
 
-![alt](/public/vercel.svg)
+![alt](/vercel.svg)
 
 test
 

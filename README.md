@@ -4,8 +4,10 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 ![alt](/public/vercel.svg)
 
-flowchart LR
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+
+
+## 개발 계획
+
+[] 전체레이아웃 잡기
+[] 메뉴바 구성
+[]
